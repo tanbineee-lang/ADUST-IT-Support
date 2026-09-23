@@ -7,7 +7,7 @@ import pandas as pd
 # PAGE CONFIGURATION
 # ---------------------------------------------------------
 st.set_page_config(
-    page_title="University IT Support Desk",
+    page_title=" ADUST University IT Support Desk",
     page_icon="💻",
     layout="wide"
 )
@@ -163,7 +163,7 @@ with tab1:
         with col1:
             name = st.text_input("Full Name *")
             email = st.text_input("University Email *")
-            role = st.selectbox("Your Role *", ["Teacher / Faculty", "Management", "Staff", "Student"])
+            role = st.selectbox("Your Role *", ["Faculty", "Management", "Staff", "Student"])
             
         with col2:
             department = st.text_input("Department / Office Location *")
@@ -212,7 +212,7 @@ with tab2:
             # Display status banner
             status = ticket['status']
             if status == "Open":
-                st.warning(f"Current Status: **{status}** (Awaiting Technician)")
+                st.warning(f"Current Status: **{status}** (Awaiting)")
             elif status == "In Progress":
                 st.info(f"Current Status: **{status}** (IT Staff is working on this)")
             elif status == "Resolved":
