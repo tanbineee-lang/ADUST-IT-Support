@@ -141,7 +141,7 @@ init_db()
 # ---------------------------------------------------------
 # INTERFACE & LAYOUT
 # ---------------------------------------------------------
-st.title("💻 University IT Support Ticket Portal")
+st.title("💻 ADUST IT Support Ticket Portal")
 
 if USE_SUPABASE:
     st.caption("🟢 Database Mode: **Supabase Cloud Database**")
