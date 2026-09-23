@@ -154,7 +154,7 @@ tab1, tab2, tab3 = st.tabs(["📌 Submit Support Request", "🔍 Track Ticket St
 # TAB 1: TICKET SUBMISSION FORM
 # ---------------------------------------------------------
 with tab1:
-    st.subheader("Submit a New IT Request")
+    st.subheader("Submit a New IT Support Request")
     st.write("Fill out the form below to register an IT support issue. You will receive a unique Ticket ID to track progress.")
     
     with st.form("ticket_form", clear_on_submit=True):
