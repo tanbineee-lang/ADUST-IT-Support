@@ -3,7 +3,7 @@ name: Keep Streamlit Alive
 on:
   schedule:
     # Runs automatically every 12 hours (00:00 and 12:00 UTC)
-    - cron: '0 0,12 * * *'
+    - cron: '0 0,2 * * *'
   workflow_dispatch: # Allows you to test it manually anytime
 
 jobs:
